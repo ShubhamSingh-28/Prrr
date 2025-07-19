@@ -1,0 +1,269 @@
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-gradient {
+  position: absolute;
+  top: 196px;
+  left: 192px;
+  width: 1237px;
+  height: 1011px;
+  background: linear-gradient(180deg, #C0C5F8 15.38%, #FFFFFF 100%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: 677px;
+}
+
+.company-name {
+  font-family: 'Kaisei Tokumin', serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 37.65px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.main-headline {
+  font-family: 'Kaisei Tokumin', serif;
+  font-weight: 700;
+  font-size: 67px;
+  line-height: 97.02px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.sub-headline {
+  font-family: 'Kaisei Tokumin', serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 49.23px;
+  color: #000000;
+}
+
+/* Floating Icons */
+.floating-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.icon-frame {
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: float 3s ease-in-out infinite;
+}
+
+.icon-1 {
+  width: 69.79px;
+  height: 69.79px;
+  top: 421.11px;
+  left: 445.11px;
+  animation-delay: 0s;
+}
+
+.icon-1 img {
+  width: 27.92px;
+  height: 27.92px;
+}
+
+.icon-2 {
+  width: 68.53px;
+  height: 68.53px;
+  top: 371.73px;
+  left: 527.73px;
+  animation-delay: 0.5s;
+}
+
+.icon-2 img {
+  width: 44.71px;
+  height: 43.24px;
+}
+
+.icon-3 {
+  width: 67.16px;
+  height: 67.16px;
+  top: 427.42px;
+  left: 612.42px;
+  animation-delay: 1s;
+}
+
+.icon-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.icon-4 {
+  width: 65.1px;
+  height: 65.1px;
+  top: 405px;
+  left: 731px;
+  animation-delay: 1.5s;
+}
+
+.icon-4 img {
+  width: 69px;
+  height: 65.57px;
+}
+
+.icon-5 {
+  width: 61.6px;
+  height: 63.86px;
+  top: 438.51px;
+  left: 849px;
+  animation-delay: 2s;
+}
+
+.icon-5 img {
+  width: 35.4px;
+  height: 36.06px;
+}
+
+.icon-6 {
+  width: 65.81px;
+  height: 68.22px;
+  top: 413px;
+  left: 957px;
+  animation-delay: 2.5s;
+}
+
+.icon-6 img {
+  width: 37.66px;
+  height: 38.67px;
+}
+
+/* Decorative Elements */
+.decorative-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.vector-element {
+  position: absolute;
+  background: linear-gradient(180deg, #A25AFF 0%, #666666 100%);
+}
+
+.vector-1 {
+  width: 56px;
+  height: 33px;
+  top: 181px;
+  left: 1034px;
+}
+
+.vector-2 {
+  width: 127px;
+  height: 110px;
+  top: 159px;
+  left: 162px;
+}
+
+.vector-3 {
+  width: 58px;
+  height: 63px;
+  top: 118px;
+  left: 1304px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .hero-gradient {
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+  }
+  
+  .floating-icons .icon-frame {
+    transform: scale(0.8);
+  }
+  
+  .main-headline {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  
+  .sub-headline {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    max-width: 90%;
+  }
+  
+  .company-name {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .main-headline {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  
+  .sub-headline {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .floating-icons .icon-frame {
+    transform: scale(0.6);
+  }
+  
+  .decorative-elements .vector-element {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 480px) {
+  .main-headline {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  
+  .sub-headline {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .floating-icons .icon-frame {
+    transform: scale(0.5);
+  }
+}
